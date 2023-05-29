@@ -11,5 +11,6 @@ urlpatterns = [
     path("", views.index, name="index"),
     # Get /hello/autor
     path("author/", views.author, name="author"),
+    path("<str:name>", views.greet, name="greet"),
 ]
 
